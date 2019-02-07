@@ -1,0 +1,48 @@
+@mixin title-text{
+  font-family: 'Playfair Display',Georgia,serif;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+@mixin text{
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+@mixin input{
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  &:active,&:hover{
+    border: 2px solid $color-pr-dark;
+    border-radius: 0.5rem;
+  }
+}
+
+@mixin container{
+  padding: 5% 15%;
+}
+
+@mixin button{
+  //display: inline-block;
+  //position: relative;
+  background-color: $color-pr;
+  color: #ccc;
+  color: rgba(255,255,255,.7);
+  font-family: 'Raleway';
+  font-size: 1em;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  margin: 12px 0;
+  padding: 8px 18px;
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+}

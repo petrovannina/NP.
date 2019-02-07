@@ -1,0 +1,36 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.title-text{
+  @include title-text
+}
+
+.text{
+  @include text
+}
+
+.content{
+  button{
+    @include button
+  }
+}
+
+button{
+  @include button
+}
+
+article{
+  margin: 10% 0;
+  text-align: center;
+  @include container;
+  .title-text{
+    color: #000;
+    @include title-text;
+  }
+  .text{
+    padding-top: 2rem;
+    @include text;
+  }
+}

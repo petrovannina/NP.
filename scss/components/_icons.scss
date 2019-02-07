@@ -1,0 +1,21 @@
+//the social-media icons
+footer, .social-media-button {
+  .social-media-list {
+    //@include container;
+    padding: 0 15%;
+    ul {
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      list-style: none;
+      padding: 1rem;
+      li {
+        border: 1px solid black;
+        border-radius: 50%;
+        i {
+          padding: 0.9rem;
+        }
+      }
+    }
+  }
+}

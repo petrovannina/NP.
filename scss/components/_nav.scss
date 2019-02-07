@@ -1,0 +1,26 @@
+nav{
+  background-color: #121212;
+  width: 100%;
+  padding: 0!important;;
+  box-sizing: initial;
+  //center the li elements of hamburger-menu
+  .navbar-nav{
+    .nav-item{
+      .nav-link{
+        text-align: center;
+        color: grey;
+        text-transform: uppercase;
+        border-top: 1px solid;
+        font-size: 1.4em;
+        padding: 0.5em;
+      }
+      &:hover{
+        background-color: $color-pr-darken;
+      }
+    }
+  }
+}
+
+
+
+ 

@@ -1,0 +1,30 @@
+// button from nav
+ .social-media-button{
+    .search-button{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0 5rem;
+      @include container;
+                //this is the INPUT
+      input{
+        @include input;
+      }
+                 //this is the GO BUTTON
+      button{
+        @include button;
+        padding: 0.5rem 4rem;
+      }
+    }
+}
+
+
+//hamburger-menu button
+.navbar-toggler[type="button"]{
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #999;
+  &:active{
+    border: none;
+  }
+}

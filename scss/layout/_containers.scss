@@ -1,0 +1,94 @@
+
+/*
+* === IMAGE BEHIND THE NAV ===
+*/
+.parallax{
+  background-image: url("../img/bk-img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  //this need to be added when the screen is bigger
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  //margin-top: 8rem;
+}
+
+/*
+* === CONTENT OVER THE PARALLAX ===
+*/
+.content-over-parallax{
+  @include container;
+  .title-text{
+    margin-top: 10%;
+  }
+  p{
+    color: #ffffff;
+  }
+  button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    font-size: 1.4em;
+    margin-bottom: 1rem;
+  }
+}
+
+/*
+* === DIV WITH THE REST OF CONTENT ===
+*/
+.main-content{
+  background-color: white;
+}
+
+/*
+* === CAROUSEL ===
+*/
+.gallery {
+  .carousel-indicators {
+    //sets the back-cl of carouselExampleIndicators
+    //overwrites the css of bootstrap
+    //li [attribute=value] more specific
+    li[data-target~="#carouselExampleIndicators"] {
+      background-color: $color-pr-lighten;
+    }
+    //sets the back-cl of carouselExampleIndicators when is active
+    & .active {
+      background-color: $color-pr !important;
+    }
+  }
+}
+
+
+/*
+* === div with colored text over ===
+*/
+.content-with-background{
+  background-image: url("../img/img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  color: $color-pr-light;
+  .title-text{
+    text-align: center;
+  }
+  p{
+    font-weight: 500;
+  }
+}
+
+/*
+* === DIV CONTACT ===
+*/
+.contact{
+  background-image: url("../img/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  //this is add this because if i added on main-content us i suppose to i create a space when i can see the parralax image
+  //
+  padding-bottom: 10rem;
+}
+

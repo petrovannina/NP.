@@ -1,0 +1,233 @@
+.social-media-button .search-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 5rem;
+  padding: 5% 15%; }
+  .social-media-button .search-button input {
+    border-radius: 0.5rem;
+    padding: 0.5rem; }
+    .social-media-button .search-button input:active, .social-media-button .search-button input:hover {
+      border: 2px solid #5b2c72;
+      border-radius: 0.5rem; }
+  .social-media-button .search-button button {
+    background-color: #7d5a92;
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Raleway';
+    font-size: 1em;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    margin: 12px 0;
+    padding: 8px 18px;
+    border-radius: 0.5rem;
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem 4rem; }
+
+.navbar-toggler[type="button"] {
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #999; }
+  .navbar-toggler[type="button"]:active {
+    border: none; }
+
+footer .social-media-list, .social-media-button .social-media-list {
+  padding: 0 15%; }
+  footer .social-media-list ul, .social-media-button .social-media-list ul {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem; }
+    footer .social-media-list ul li, .social-media-button .social-media-list ul li {
+      border: 1px solid black;
+      border-radius: 50%; }
+      footer .social-media-list ul li i, .social-media-button .social-media-list ul li i {
+        padding: 0.9rem; }
+
+.logo {
+  display: block;
+  margin: auto;
+  width: 30%;
+  margin-right: 1rem; }
+
+nav {
+  background-color: #121212;
+  width: 100%;
+  padding: 0 !important;
+  box-sizing: initial; }
+  nav .navbar-nav .nav-item .nav-link {
+    text-align: center;
+    color: grey;
+    text-transform: uppercase;
+    border-top: 1px solid;
+    font-size: 1.4em;
+    padding: 0.5em; }
+  nav .navbar-nav .nav-item:hover {
+    background-color: #3d085a; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.title-text {
+  font-family: 'Playfair Display',Georgia,serif;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 2em; }
+
+.text {
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+  font-weight: 300;
+  font-size: 1.1em; }
+
+.content button {
+  background-color: #7d5a92;
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Raleway';
+  font-size: 1em;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  margin: 12px 0;
+  padding: 8px 18px;
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box; }
+
+button {
+  background-color: #7d5a92;
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Raleway';
+  font-size: 1em;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  margin: 12px 0;
+  padding: 8px 18px;
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box; }
+
+article {
+  margin: 10% 0;
+  text-align: center;
+  padding: 5% 15%; }
+  article .title-text {
+    color: #000;
+    font-family: 'Playfair Display',Georgia,serif;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: 2em; }
+  article .text {
+    padding-top: 2rem;
+    letter-spacing: 0.5px;
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: 1.1em; }
+
+/*
+* === IMAGE BEHIND THE NAV ===
+*/
+.parallax {
+  background-image: url("../img/bk-img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1; }
+
+/*
+* === CONTENT OVER THE PARALLAX ===
+*/
+.content-over-parallax {
+  padding: 5% 15%; }
+  .content-over-parallax .title-text {
+    margin-top: 10%; }
+  .content-over-parallax p {
+    color: #ffffff; }
+  .content-over-parallax button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    font-size: 1.4em;
+    margin-bottom: 1rem; }
+
+/*
+* === DIV WITH THE REST OF CONTENT ===
+*/
+.main-content {
+  background-color: white; }
+
+/*
+* === CAROUSEL ===
+*/
+.gallery .carousel-indicators li[data-target~="#carouselExampleIndicators"] {
+  background-color: #d9cede; }
+.gallery .carousel-indicators .active {
+  background-color: #7d5a92 !important; }
+
+/*
+* === div with colored text over ===
+*/
+.content-with-background {
+  background-image: url("../img/img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  color: #a791b7; }
+  .content-with-background .title-text {
+    text-align: center; }
+  .content-with-background p {
+    font-weight: 500; }
+
+/*
+* === DIV CONTACT ===
+*/
+.contact {
+  background-image: url("../img/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  padding-bottom: 10rem; }
+
+/*
+===== Footer =====
+*/
+footer {
+  background-color: black;
+  color: #ffffff; }
+  footer .row {
+    padding: 3rem; }
+    footer .row .column {
+      padding: 2rem 0; }
+      footer .row .column ul {
+        margin: 0 3rem;
+        list-style: none;
+        text-decoration: underline; }
+  footer hr {
+    background-color: white;
+    margin: 0; }
+  footer .social-media-list {
+    background-color: #121212; }
+
+/*# sourceMappingURL=style.css.map */

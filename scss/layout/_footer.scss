@@ -1,0 +1,28 @@
+
+/*
+===== Footer =====
+*/
+footer{
+  background-color: black;
+  color: #ffffff;
+  .row{
+    padding: 3rem;
+    .column{
+      padding: 2rem 0;
+      ul{
+        margin: 0 3rem;
+        list-style: none;
+        text-decoration: underline;
+      }
+    }
+  }
+  //adds a white-line before social media in the footer
+  hr{
+    background-color: white;
+    margin: 0;
+  }
+  //set the social media button bk white
+  .social-media-list{
+    background-color: #121212;
+  }
+}
