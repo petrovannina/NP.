@@ -3,38 +3,38 @@
 * === IMAGE BEHIND THE NAV ===
 */
 .parallax{
-  background-image: url("../img/bk-img.jpg");
+  background-image: url("../img/img-nav.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: 100%;
-  //this need to be added when the screen is bigger
-  position: fixed;
-  top: 0;
-  z-index: -1;
-  //margin-top: 8rem;
+  background-size: cover;
+  //this makes the background-image fixed on top
+  //while the rest of content is moving on while scrolling
+  @media only screen and (min-width: 760px) {
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .content-over-parallax{
+    @include container;
+    .title-text{
+      margin-top: 10%;
+    }
+    p{
+      color: #ffffff;
+    }
+    button{
+      background-color: transparent;
+      border: none;
+      color: white;
+      text-decoration: underline;
+      font-size: 1em;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 /*
 * === CONTENT OVER THE PARALLAX ===
 */
-.content-over-parallax{
-  @include container;
-  .title-text{
-    margin-top: 10%;
-  }
-  p{
-    color: #ffffff;
-  }
-  button{
-    background-color: transparent;
-    border: none;
-    color: white;
-    text-decoration: underline;
-    font-size: 1.4em;
-    margin-bottom: 1rem;
-  }
-}
+
 
 /*
 * === DIV WITH THE REST OF CONTENT ===
@@ -62,20 +62,39 @@
 }
 
 
+
 /*
 * === div with colored text over ===
 */
 .content-with-background{
-  background-image: url("../img/img.jpg");
+  background-image: url("../img/suit.png");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;
   color: $color-pr-light;
   .title-text{
+    @include title-text;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0 0 18px;
+    color: white;
+    font-family: 'Droid Serif',Georgia,Times,serif;
     text-align: center;
   }
   p{
-    font-weight: 500;
+    @include text;
+    color: white;
+    font-weight: 400;
+  }
+  .first{
+    font-size: 1.1em;
+  }
+  button{
+    font-size: .8rem;
   }
 }
 
@@ -83,12 +102,9 @@
 * === DIV CONTACT ===
 */
 .contact{
-  background-image: url("../img/contact.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(pink 90%, white);
   text-align: left;
   //this is add this because if i added on main-content us i suppose to i create a space when i can see the parralax image
   //
   padding-bottom: 10rem;
 }
-

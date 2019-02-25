@@ -1,22 +1,68 @@
-// button from nav
+// button from nav        social-media-list-!!!!!! it is icons
  .social-media-button{
     .search-button{
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      padding: 0 5rem;
-      @include container;
+      padding: 0 8rem;
+      margin-top: 1rem;
+      @media only screen and (min-width: 770px) {
+        margin-left: auto;
+        margin-top: 0;
+        padding: 0;
+      }
                 //this is the INPUT
       input{
         @include input;
+        background: #fff;
+        color: #999;
+        height: 34px;
+        font-family: 'Helvetica Neue',Arial,sans-serif;
+        font-size: .9em;
+        margin: 0;
+        padding: 0 8px !important;
+        border: 1px solid rgba(0,0,0,.12);
+        border-radius: 2px;
+        box-shadow: none;
+        box-sizing: border-box;
+        @media only screen and (min-width: 770px){
+          margin-right: 1rem;
+        }
       }
                  //this is the GO BUTTON
       button{
-        @include button;
-        padding: 0.5rem 4rem;
+        display: inline-block;
+        position: relative;
+        background-color: purple;
+        color: #ccc;
+        color: rgba(255,255,255,.7);
+        font-family: 'Raleway';
+        font-size: .75em;
+        font-weight: 700;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 12px 0;
+        padding: 8px 18px;
+        border-radius: 3px;
+        border: none;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        @media only screen and (min-width: 770px){
+          margin-right: 1rem;
+        }
       }
     }
+   @media only screen and (min-width: 770px) {
+     display: flex;
+     justify-content: space-between;
+     padding: 0 10%;
+     flex-wrap: wrap;
+   }
 }
+
+
 
 
 //hamburger-menu button
@@ -26,5 +72,11 @@
   color: #999;
   &:active{
     border: none;
+  }
+}
+
+nav{
+  .navbar-toggler [aria-explanded="true"]{
+  padding-bottom: 0;
   }
 }
